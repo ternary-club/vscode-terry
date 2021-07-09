@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#ints"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
