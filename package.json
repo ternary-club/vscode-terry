@@ -1,0 +1,25 @@
+{
+    "name": "terry",
+    "displayName": "Terry",
+    "description": "Terry language support for Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "terry",
+            "aliases": ["Terry", "terry"],
+            "extensions": [".try"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "terry",
+            "scopeName": "source.terry",
+            "path": "./syntaxes/terry.tmLanguage.json"
+        }]
+    }
+}
