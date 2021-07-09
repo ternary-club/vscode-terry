@@ -6,26 +6,78 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#sizes"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#labels"
+		},
+		{
+			"include": "#ints"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.terry",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(store|load|call|goto)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.terry",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.terry",
-					"match": "\\\\."
-				}
-			]
+		"sizes": {
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b(tryte|word|triple|const)\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{ 
+				"name": "keyword.operators.terry",
+				"match": "~|\\+|\\-|%|\\/|\\\\|\\*|\\||&|="
+				}]
+		},
+		"registers": {
+			"patterns": [{
+				"name": "constant.character.terry",
+				"match": "\\b([1-3][a-i])|(9[a-c])\\b"
+			}]
+		},
+		"labels": {
+			"patterns": [{
+				"name": "storage.modifier.terry",
+				"match": "\\b[A-Z]([a-z0-9_]*)\\b"
+			}]
+		},
+		"ints": {
+			"patterns": [{
+				"name": "constant.numeric.terry",
+				"match": "\\b[0-9]+\\b"
+			},
+			{
+				"name": "constant.numeric.terry",
+				"match": "\\b0t[0-2]+\\b"
+			},
+			{
+				"name": "constant.numeric.terry",
+				"match": "\\b0b[0-1N]+\\b"
+			},
+			{
+				"name": "constant.numeric.terry",
+				"match": "\\b0h[0-9A-Q]+\\b"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.terry",
+				"match": "#.*$"
+			}]
 		}
 	},
 	"scopeName": "source.terry"
