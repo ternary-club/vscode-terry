@@ -19,9 +19,6 @@
 		},
 		{
 			"include": "#ints"
-		},
-		{
-			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -52,7 +49,7 @@
 		"labels": {
 			"patterns": [{
 				"name": "storage.modifier.terry",
-				"match": "\\b[A-Z]([a-z0-9_]*)\\b"
+				"match": "\\b[A-Z]([A-Za-z0-9_]*)\\b"
 			}]
 		},
 		"ints": {
