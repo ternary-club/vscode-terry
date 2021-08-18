@@ -22,6 +22,9 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
@@ -33,25 +36,25 @@
 		},
 		"sizes": {
 			"patterns": [{
-				"name": "entity.name.type",
+				"name": "entity.name.type.terry",
 				"match": "\\b(tryte|word|triple|const)\\b"
 			}]
 		},
 		"operators": {
 			"patterns": [{ 
-				"name": "keyword.operators.terry",
-				"match": "~|\\+|\\-|%|\\/|\\\\|\\*|\\||&|="
+				"name": "keyword.operator.terry",
+				"match": "~|\\+|\\-|%|\\/|\\\\|\\*|\\||&|=|>|<|\\?|:|\\^"
 				}]
 		},
 		"registers": {
 			"patterns": [{
-				"name": "constant.character.terry",
+				"name": "constant.other.register.terry",
 				"match": "\\b([1-3][a-i])|(9[a-c])\\b"
 			}]
 		},
 		"labels": {
 			"patterns": [{
-				"name": "storage.modifier.terry",
+				"name": "header",
 				"match": "\\b[A-Z]([A-Za-z0-9_]*)\\b"
 			}]
 		},
@@ -77,6 +80,12 @@
 			"patterns": [{
 				"name": "comment.line.terry",
 				"match": "#.*$"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.name.terry",
+				"match": "\\b[a-z_]+[a-z0-9_]*\\b"
 			}]
 		}
 	},
