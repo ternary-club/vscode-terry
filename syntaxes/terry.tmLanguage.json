@@ -43,36 +43,36 @@
 		"operators": {
 			"patterns": [{ 
 				"name": "keyword.operator.terry",
-				"match": "~|\\+|\\-|%|\\/|\\\\|\\*|\\||&|=|>|<|\\?|:|\\^"
+				"match": "~|\\+|\\-|%|\\/|\\\\|\\*|\\|&|=|>|<|\\?|:|\\^|\\|"
 				}]
 		},
 		"registers": {
 			"patterns": [{
-				"name": "constant.other.register.terry",
+				"name": "constant.language.terry",
 				"match": "\\b([1-3][a-i])|(9[a-c])\\b"
 			}]
 		},
 		"labels": {
 			"patterns": [{
-				"name": "header",
+				"name": "entity.name.function.terry",
 				"match": "\\b[A-Z]([A-Za-z0-9_]*)\\b"
 			}]
 		},
 		"ints": {
 			"patterns": [{
-				"name": "constant.numeric.terry",
+				"name": "constant.numeric.terry.decimal",
 				"match": "\\b[0-9]+\\b"
 			},
 			{
-				"name": "constant.numeric.terry",
+				"name": "constant.numeric.terry.ternary",
 				"match": "\\b0t[0-2]+\\b"
 			},
 			{
-				"name": "constant.numeric.terry",
+				"name": "constant.numeric.terry.trinary",
 				"match": "\\b0b[0-1N]+\\b"
 			},
 			{
-				"name": "constant.numeric.terry",
+				"name": "constant.numeric.terry.heptavintimal",
 				"match": "\\b0h[0-9A-Q]+\\b"
 			}]
 		},
