@@ -2,5 +2,11 @@
     "comments": {
         // symbol used for single line comment. Remove this entry if your language does not support line comments
         "lineComment": "#",
-    }
+    },
+	"onEnterRules": [
+		{
+		  "beforeText": "^\\s*[A-Z]([A-Za-z0-9_]*)\\s*$",
+		  "action": { "indent": "indent" }
+		}
+	],
 }
